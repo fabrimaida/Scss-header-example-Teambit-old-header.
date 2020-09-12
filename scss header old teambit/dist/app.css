@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "HarmoniaSansProCyrRegular", Arial, sans-serif;
+}
+
+header {
+  height: 600px;
+}
+
+header .header-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+  height: 85px;
+  margin: auto;
+  border-bottom: 1px solid #58402B;
+}
+
+header .header-menu .logo {
+  width: 30%;
+  height: 100px;
+  padding-left: 40px;
+  padding-top: 35px;
+}
+
+header .header-menu .logo a {
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  line-height: 60px;
+  height: 100px;
+}
+
+.nav-list #burger-menu {
+  display: none;
+}
+
+.nav-list li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 40px;
+  text-transform: capitalize;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #58402B;
+  font-weight: bold;
+}
+
+.nav-list li a:hover {
+  color: #263971;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid blue;
+}
+
+.button:hover {
+  background-color: #263971;
+}
+
+.button:hover a {
+  color: #fff;
+}
+
+.open-dropdown {
+  position: relative;
+}
+
+.open-dropdown .dropdown {
+  display: none;
+}
+
+.open-dropdown .dropdown .dropdown:hover {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 45px;
+  left: -20px;
+  width: 40px;
+  padding: 0 22px;
+  background-color: #fff;
+  box-shadow: 2px 2px #ccc;
+  border: 1px solid #e2e3e5;
+  border-radius: 3px;
+}
+
+.open-dropdown .dropdown .dropdown:hover li {
+  text-transform: capitalize;
+  margin-bottom: -20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #burger-menu {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+}
+
+.jumbo {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin: auto;
+  margin-top: 90px;
+  height: 400px;
+}
+
+.jumbo-title,
+.jumbo-img {
+  width: 50%;
+  height: 400px;
+  color: #58402B;
+  font-weight: normal;
+}
+
+.jumbo-title h1 {
+  font-size: 49.5px;
+  line-height: 80px;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.jumbo-title h3 {
+  font-size: 22.5px;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.jumbo-title span {
+  margin: 0 20px;
+  color: #e2e3e5;
+}
+
+.jumbo-title p {
+  margin-top: 20px;
+}
+
+.jumbo-title a {
+  text-decoration: none;
+  color: #58402B;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.jumbo-img img {
+  width: 100%;
+}
+
+/* Disclaimer */
+
+main h2 {
+  font-size: 1rem;
+  color: grey;
+  padding: 10vw;
+}
+main h2:hover {
+  color: red;
+}
